@@ -1,0 +1,16 @@
+[package]
+name = "impl-codec"
+version = "0.5.1"
+authors = ["AXIA Technologies <sankar.boro@zeeve.io>"]
+license = "MIT OR Apache-2.0"
+homepage = "https://github.com/axia-tech/axia-common"
+description = "AXIA Codec serialization support for uint and fixed hash."
+edition = "2018"
+rust-version = "1.56.1"
+
+[dependencies]
+axia-scale-codec = { git = "https://github.com/axia-tech/axia-scale-codec", branch = "v2.3.1", default-features = false, features = ["max-encoded-len"] }
+
+[features]
+default = ["std"]
+std = ["axia-scale-codec/std"]

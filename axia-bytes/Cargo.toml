@@ -1,0 +1,15 @@
+[package]
+name = "axia-bytes"
+version = "0.1.2"
+authors = ["AXIA Technologies <sankar.boro@zeeve.io>"]
+repository = "https://github.com/axia-tech/axia-common"
+description = "byte utilities for AXIA"
+license = "MIT OR Apache-2.0"
+edition = "2018"
+rust-version = "1.56.1"
+
+[dependencies]
+
+[features]
+default = ["std"]
+std = []

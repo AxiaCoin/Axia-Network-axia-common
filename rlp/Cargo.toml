@@ -1,0 +1,27 @@
+[package]
+name = "rlp"
+version = "0.5.1"
+description = "Recursive-length prefix encoding, decoding, and compression"
+repository = "https://github.com/axia-tech/axia-common"
+license = "MIT OR Apache-2.0"
+authors = ["AXIA Technologies <sankar.boro@zeeve.io>"]
+edition = "2018"
+rust-version = "1.56.1"
+
+[dependencies]
+bytes = { version = "1", default-features = false }
+rustc-hex = { version = "2.0.1", default-features = false }
+
+[dev-dependencies]
+criterion = "0.3.0"
+hex-literal = "0.3.1"
+primitive-types = { path = "../primitive-types", version = "0.10", features = ["impl-rlp"] }
+
+[features]
+default = ["std"]
+std = ["bytes/std", "rustc-hex/std"]
+
+[[bench]]
+name = "rlp"
+path = "benches/rlp.rs"
+harness = false
