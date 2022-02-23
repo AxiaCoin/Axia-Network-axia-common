@@ -14,5 +14,6 @@ members = [
 	"primitive-types",
 	"ethereum-types",
 	"ethbloom",
-	"axia-util-mem/derive"
+	"axia-util-mem/derive",
+	"triehash"
 ]
