@@ -10,7 +10,7 @@ rust-version = "1.56.1"
 
 [dependencies]
 axia-util-mem = { path = "../axia-util-mem", version = "0.10.2", default-features = false, features = ["std"] }
-parking_lot = "0.11.1"
+parking_lot = "0.12.1"
 kvdb = { version = "0.10", path = "../kvdb" }
 
 [dev-dependencies]
